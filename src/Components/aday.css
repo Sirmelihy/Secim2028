@@ -1,0 +1,55 @@
+.aday-obj:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.aday-content {
+    display:flex;
+    align-items:center; 
+    margin-bottom:5px;
+}
+
+.aday-title {
+    font-family: sans-serif;
+}
+
+.aday-vote-count {
+
+    font-weight:100;
+    font-size:13px;
+}
+
+.gray-line {
+    width:100%;
+    background-color: gray;
+    border-top-right-radius : 5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.oy-line {
+
+    height: 15px;
+    right: 0px;
+    border-top-right-radius : 5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.ErdoğanColor {
+    background-color: orange;
+}
+
+.KılıçdaroğluColor {
+    background-color: red;
+}
+
+.OğanColor {
+    background-color: rgb(16, 5, 5);
+}
+
+.İnceColor {
+    background-color: rgb(18, 18, 172);
+}
+

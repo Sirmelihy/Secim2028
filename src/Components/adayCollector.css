@@ -1,0 +1,22 @@
+.wrapper-aday-collector {
+    margin-top: 50px ;
+}
+
+.wrapper-card {
+
+    width: 100%;
+    height: 550px;
+    max-height: 550px;
+    overflow: auto;
+    border-top: solid 10px;
+    border-top-color:red;
+    border-right:none;
+    border-left:none;
+}
+
+.aday-card-image {
+
+    max-width: 500px;
+    width: 80%;
+    height: 80% ;
+}

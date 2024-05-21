@@ -1,0 +1,30 @@
+.wrapper-iladay-card {
+    width:100%;
+    border-top: solid 10px;
+    border-top-color:red;
+    border-right:none;
+    border-left:none;
+}
+
+.iladay-manual-header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.ErdoğanColor {
+    background-color: orange;
+}
+
+.KılıçdaroğluColor {
+    background-color: red;
+}
+
+.OğanColor {
+    background-color: rgb(16, 5, 5);
+}
+
+.İnceColor {
+    background-color: rgb(18, 18, 172);
+}

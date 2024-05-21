@@ -1,0 +1,32 @@
+.Erdoğanrengi {
+    fill: orange;
+}
+
+.Kılıçdaroğlurengi {
+    fill : red;
+}
+
+.Oğanrengi {
+    fill : black;
+}
+
+.İncerengi {
+    fill : blue;
+}
+
+.ErdoğanColor {
+    background-color: orange;
+}
+
+.KılıçdaroğluColor {
+    background-color : red;
+}
+
+.OğanColor {
+    background-color : black;
+}
+
+.İnceColor {
+    background-color : blue;
+}
+

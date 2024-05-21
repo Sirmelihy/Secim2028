@@ -1,0 +1,62 @@
+.alliance-obj:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.alliance-title {
+    font-family: sans-serif;
+}
+
+.alliance-content {
+    display:flex;
+    align-items:center; 
+    margin-bottom:5px;
+}
+
+
+
+.alliance-vote-count {
+
+    font-weight:100;
+    font-size:13px;
+}
+
+.gray-line {
+    width:100%;
+    background-color: gray;
+    border-top-right-radius : 5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.alliance-oy-line {
+
+    height: 15px;
+    right: 0px;
+    border-top-right-radius : 5px;
+    border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+
+.MilletColor {
+    background-color: red;
+}
+
+.CumhurColor {
+    background-color: orange;
+}
+
+.EmekColor {
+    background-color: purple;
+}
+
+.AtaColor {
+    background-color: rgb(23, 16, 16);
+}
+
+.LiberalColor {
+    background-color: blue;
+}
+

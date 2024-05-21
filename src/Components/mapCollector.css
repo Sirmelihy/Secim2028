@@ -1,0 +1,27 @@
+.map-collector-wrapper {
+    margin-top:25px;
+    margin-bottom:25px
+}
+
+@media (max-width: 576px) {
+    .hide-on-small-screen {
+      display: none;
+    }
+  }
+
+
+  .button-map-collector {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    border-radius:0;
+    align-items:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom: solid black 1px;
+  }
+
+  .map-image {
+    width:7%;
+    margin-right:10px;
+  }
