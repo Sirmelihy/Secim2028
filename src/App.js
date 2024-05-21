@@ -8,6 +8,7 @@ import AdayCollector from './Components/adayCollector.js';
 import AllianceCollector from './Components/allianceCollector.js';
 import Turkiye from './Components/MapCollector.js';
 import IlAdayCollector from './Components/IlAdayCollector.js';
+import MVResults from './Components/MVResults.js'
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           </div>
 
           <IlAdayCollector/>
+          <MVResults/>
           
 
 

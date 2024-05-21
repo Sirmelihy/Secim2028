@@ -1,7 +1,7 @@
 .AKPheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(234, 133, 18) !important;
+    background-color: #ea8512 !important;
 }
 
 .IPheader {
@@ -13,19 +13,13 @@
 .MHPheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(21, 5, 66) !important;
+    background-color: #150542 !important;
 }
 
 .CHPheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
     background-color: #E23D29 !important;
-}
-
-.YSPheader {
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
-    background-color: rgb(101, 33, 87) !important;
 }
 
 .LDPheader {
@@ -40,46 +34,40 @@
 
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(0, 3, 6) !important;
+    background-color: #000306 !important;
 
 }
 
 .MEMLEKETheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(22, 127, 202) !important;
-}
-
-.CANheader {
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
-    background-color: rgb(245, 3, 189) !important;
+    background-color: #167fca !important;
 }
 
 .GELheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(7, 66, 16) !important;
+    background-color: #074210 !important;
 
 }
 
 .DEMheader  {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(105, 3, 97) !important;
+    background-color: #690361 !important;
 }
 
 
 .DEVAheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(31, 54, 205) !important;
+    background-color: #1f36cd !important;
 }
 
 .SPheader {
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
-    background-color: rgb(244, 67, 67) !important;
+    background-color: #f44343 !important;
 }
 
 .YRPheader {

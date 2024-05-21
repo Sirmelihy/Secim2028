@@ -76,7 +76,7 @@ class IlAday extends Component {
                             <TableHead>
                             <TableRow>
                                 <TableCell>Aday</TableCell>
-                                <TableCell align="middle">%</TableCell>
+                                <TableCell align="center">%</TableCell>
                                 <TableCell align="right">Oy</TableCell>
                             </TableRow>
                             </TableHead>
@@ -92,7 +92,7 @@ class IlAday extends Component {
                                     {posts.aday.adayAdi}
                                     </div>
                                     </TableCell>
-                                <TableCell align="middle">{posts.yuzdeOyOrani}</TableCell>
+                                <TableCell align="center">{posts.yuzdeOyOrani}</TableCell>
                                 <TableCell align="right">{posts.oySayisi}</TableCell>
                                 </TableRow>
                             ))}
