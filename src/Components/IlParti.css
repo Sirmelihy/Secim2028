@@ -1,0 +1,14 @@
+.wrapper-ilparti-card {
+    width:100%;
+    border-top: solid 10px;
+    border-top-color:blue;
+    border-right:none;
+    border-left:none;
+}
+
+.ilparti-manual-header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+}

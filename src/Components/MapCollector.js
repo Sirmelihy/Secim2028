@@ -106,11 +106,11 @@ function MapCollector() {
                   <>
                   <TurkiyeAday posts={adayData} />
                   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                      {adayWinners.map((winner) => (
-                      <React.Fragment>
+                      {adayWinners.map((winner,index) => (
+                      <React.Fragment key={index}>
                         <div className='aday-names' style={{display:'flex',alignItems:'inherit',marginRight:'20px'}}>
                           <div className={getLastWord(winner.adayName) + 'Color'} style={{width:'15px' , height:'15px' , borderRadius:'50%', marginRight:'10px'}}></div>
-                          <span key={winner.adayName}>{getLastWord(winner.adayName)}</span>
+                          <span>{getLastWord(winner.adayName)}</span>
                         </div>
                       </React.Fragment>))}
                     </div>
@@ -128,11 +128,11 @@ function MapCollector() {
                   <>
                   <TurkiyeParti posts={partiData} />
                   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,flexWrap:'wrap', width:'100%'}}>
-                      {partiWinners.map((winner) => (
-                      <React.Fragment>
+                      {partiWinners.map((winner,index) => (
+                      <React.Fragment key={index}>
                         <div className='parti-names' style={{display:'flex',alignItems:'inherit',marginRight:'20px'}}>
                           <div className={getLastWord(winner.partiName) + 'Color'} style={{width:'15px' , height:'15px' , borderRadius:'50%', marginRight:'10px'}}></div>
-                          <span key={winner.partiName}>{getLastWord(winner.partiName)}</span>
+                          <span>{getLastWord(winner.partiName)}</span>
                         </div>
                       </React.Fragment>))}
                     </div>

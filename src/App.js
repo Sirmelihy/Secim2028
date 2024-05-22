@@ -9,14 +9,17 @@ import AllianceCollector from './Components/allianceCollector.js';
 import Turkiye from './Components/MapCollector.js';
 import IlAdayCollector from './Components/IlAdayCollector.js';
 import MVResults from './Components/MVResults.js'
+import IlPartiCollector from './Components/IlPartiCollector.js'
+import Header from './Components/Layout/Header.js'
+import Fot from './Components/Layout/Fot.js'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
+      <Header/>
         <div className="container">
+        
           <HDRCards/>
             <Row>
               <Col sm>
@@ -33,14 +36,13 @@ function App() {
 
           <IlAdayCollector/>
           <MVResults/>
+
+          <IlPartiCollector/>
           
 
 
         </div>
-          
-        
-        
-      </header>
+        <Fot/>
     </div>
   );
 }
