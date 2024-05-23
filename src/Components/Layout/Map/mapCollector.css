@@ -25,3 +25,19 @@
     width:7%;
     margin-right:10px;
   }
+
+  .ErdoğanColor {
+    background-color: orange;
+}
+
+.KılıçdaroğluColor {
+    background-color : red;
+}
+
+.OğanColor {
+    background-color : black;
+}
+
+.İnceColor {
+    background-color : blue;
+}

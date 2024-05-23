@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './mvResults.css'
+import './MVResults.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import axios from 'axios'
 
@@ -79,7 +79,7 @@ import LinearProgress  from '@mui/material/LinearProgress'
                             >
                                 <TableCell>
                                     <div className='d-flex flex-row align-items-center'>
-                                    <Avatar className='mx-3' alt="Remy Sharp" src={require(`../Images/PoliticalParties/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}/>
+                                    <Avatar className='mx-3' alt="Remy Sharp" src={require(`../../../Images/PoliticalParties/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}/>
                                     <span className='fw-bold'>{posts.siyasiParti.siyasiPartiKisaltma }</span>
                                     </div>
                                     </TableCell>

@@ -1,6 +1,5 @@
 import React, {useState , useEffect} from 'react'
 import './mapCollector.css'
-import './turkiyeAday.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -8,10 +7,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 import TurkiyeAday from './turkiyeAday.js';
 import TurkiyeParti from './turkiyeParti.js';
-import Cumhur from '../Images/Logos/logoCumhur.jpg'
-import TBMM from '../Images/Logos/TBMM.jpg'
+import Cumhur from '../../../Images/Logos/logoCumhur.jpg'
+import TBMM from '../../../Images/Logos/TBMM.jpg'
 import axios from 'axios'
-import Loading from '../Images/loading.gif'
+import Loading from '../../../Images/loading.gif'
 
 function MapCollector() {
 

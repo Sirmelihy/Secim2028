@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import './adayCollector.css'
+import './allianceCollector.css'
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CumhurLogo from '../Images/Logos/logoCumhur.jpg'
-import Aday from './aday.js'
+import TbmmLogo from '../../../Images/Logos/TBMM.jpg'
+import Alliance from './alliance.js'
 import axios from 'axios'
 
-
-
-
-class adayCollector extends Component {
+export default class allianceCollector extends Component {
 
   constructor(props) {
     super(props);
@@ -22,7 +19,7 @@ class adayCollector extends Component {
 }
 
 componentDidMount() {
-  axios.get('https://localhost:7137/api/Oylar/GetTurkiyeAdayOyOran')
+  axios.get('https://localhost:7137/api/Oylar/GetTurkiyeIttifakOran')
   .then(response => {
       console.log(response)
       this.setState({posts : response.data})
@@ -34,43 +31,41 @@ componentDidMount() {
 
   render() {
 
-    function getLastWord(str) {
+    function getFirstWord(str) {
       const words = str.split(' ');
-      return words[words.length - 1];
+      return words[0];
     }
 
     const {posts} = this.state
 
     return (
-      <div className='wrapper-aday-collector'>
-        <Card className='wrapper-card'>
+        <div className='wrapper-aday-collector'>
+        <Card className='wrapper-alliance-card'>
             <Card.Header style={{padding:'25px'}}>
                 <Row className='align-items-center' >
                     <Col xs={2} style={{display:'flex', justifyContent:'center'}} >
-                        <Card.Img className='aday-card-image' src = {CumhurLogo}/>
+                        <Card.Img className='aday-card-image' src = {TbmmLogo}/>
                     </Col>
                     <Col xs = {10}>
-                            <h3>2028 Cumhurbaşkanlığı Seçimi</h3>
+                            <h3>2028 Milletvekili Seçimi</h3>
                     </Col>
                 </Row>
             </Card.Header>
 
             
             <Card.Body style={{paddingBottom:'5%' ,}}>
-              <div style={{marginTop:'0px'}}>
 
-              {posts.map((posts) => 
-                <Aday
-                key= {posts.aday.adayId}
-                adayImageUrl = {require(`../Images/Candidates/${getLastWord(posts.aday.adayAdi)}.png`)}
-                adayColor = {getLastWord(posts.aday.adayAdi) + 'Color'}
-                adayName = {posts.aday.adayAdi}
+            {posts.map((posts) => 
+                <Alliance
+                key = {posts.ittifak.id}
+                adayColor = {getFirstWord(posts.ittifak.ittifakName) +'Color'}
+                adayName = {posts.ittifak.ittifakName}
                 adayVoteRate = {posts.oyOrani}
                 adayVoteRateString = {posts.yuzdeOyOrani}
                 adayVoteCount = {posts.oySayisi}
                 />
               )}
-              </div>
+
             </Card.Body>
             
         </Card>
@@ -78,5 +73,3 @@ componentDidMount() {
     )
   }
 }
-
-export default adayCollector;
