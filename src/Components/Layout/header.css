@@ -9,3 +9,38 @@
     display: flex;
     flex-direction: column;
 }
+
+.header-image {
+    width:10% ;
+}
+
+@media (max-width:767px) {
+    .header-image {
+        width: 25%;
+    }
+}
+
+@media (min-width:767px) {
+    .header-image {
+        width: 20%;
+    }
+}
+
+@media (min-width:992px) {
+    .header-image {
+        width: 15%;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-image {
+        width: 10%;
+    }
+}
+
+@media (min-width:1400px) {
+    .header-image {
+        width: 8%;
+    }
+}
+

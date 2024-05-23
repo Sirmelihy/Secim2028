@@ -4,7 +4,7 @@ import './adayCollector.css'
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CumhurLogo from '../Images/logoCumhur.jpg'
+import CumhurLogo from '../Images/Logos/logoCumhur.jpg'
 import Aday from './aday.js'
 import axios from 'axios'
 
@@ -62,7 +62,7 @@ componentDidMount() {
               {posts.map((posts) => 
                 <Aday
                 key= {posts.aday.adayId}
-                adayImageUrl = {require(`../Images/${getLastWord(posts.aday.adayAdi)}.png`)}
+                adayImageUrl = {require(`../Images/Candidates/${getLastWord(posts.aday.adayAdi)}.png`)}
                 adayColor = {getLastWord(posts.aday.adayAdi) + 'Color'}
                 adayName = {posts.aday.adayAdi}
                 adayVoteRate = {posts.oyOrani}

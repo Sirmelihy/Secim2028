@@ -4,7 +4,7 @@ import './Footer.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Logo from '../../Images/headerLogo.png';
+import Logo from '../../Images/Logos/headerLogo.png';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 

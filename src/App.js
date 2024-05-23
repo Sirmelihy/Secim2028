@@ -22,10 +22,10 @@ function App() {
         
           <HDRCards/>
             <Row>
-              <Col sm>
+              <Col lg={6}>
                 <AdayCollector/>
               </Col>
-              <Col sm>
+              <Col lg={6}>
               <AllianceCollector/>
               </Col>
             </Row>
