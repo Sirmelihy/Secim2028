@@ -55,7 +55,7 @@ import { FaArrowRight } from "react-icons/fa";
                   partiAdi = {posts.siyasiParti.siyasiPartiKisaltma}
                   oyOrani = {posts.yuzdeOyOrani}
                   partiCss = {posts.siyasiParti.siyasiPartiKisaltma + 'header'}
-                  partiImageUrl = {require(`../Images/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}
+                  partiImageUrl = {require(`../Images/PoliticalParties/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}
                 />
               )}
               </div>

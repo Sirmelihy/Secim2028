@@ -4,7 +4,7 @@ import './allianceCollector.css'
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import TbmmLogo from '../Images/TBMM.jpg'
+import TbmmLogo from '../Images/Logos/TBMM.jpg'
 import Alliance from './alliance.js'
 import axios from 'axios'
 
