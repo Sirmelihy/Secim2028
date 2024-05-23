@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import HDRCard from '../Components/hdrCard';
+import HDRCard from './hdrCard';
 import axios from 'axios'
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -55,7 +55,7 @@ import { FaArrowRight } from "react-icons/fa";
                   partiAdi = {posts.siyasiParti.siyasiPartiKisaltma}
                   oyOrani = {posts.yuzdeOyOrani}
                   partiCss = {posts.siyasiParti.siyasiPartiKisaltma + 'header'}
-                  partiImageUrl = {require(`../Images/PoliticalParties/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}
+                  partiImageUrl = {require(`../../../Images/PoliticalParties/${posts.siyasiParti.siyasiPartiKisaltma}.jpg`)}
                 />
               )}
               </div>
