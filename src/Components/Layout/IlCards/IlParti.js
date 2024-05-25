@@ -28,7 +28,7 @@ class IlParti extends Component {
     componentDidMount() {
         const {ilNumber} = this.props;
 
-        axios.get('https://localhost:7137/api/SecimIl/'+ilNumber)
+        axios.get('https://secim202820240512205232.azurewebsites.net/api/SecimIl/'+ilNumber)
         .then(response => {
             this.setState({il : response.data})
         })
@@ -36,7 +36,7 @@ class IlParti extends Component {
             console.log(error)
         })
 
-        axios.get('https://localhost:7137/api/Oylar/GetIlPartiOyOran?ilid='+ilNumber)
+        axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetIlPartiOyOran?ilid='+ilNumber)
         .then(response => {
             let toplam = 0;
             response.data.forEach(post => {

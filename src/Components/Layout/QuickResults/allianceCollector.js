@@ -19,7 +19,7 @@ export default class allianceCollector extends Component {
 }
 
 componentDidMount() {
-  axios.get('https://localhost:7137/api/Oylar/GetTurkiyeIttifakOran')
+  axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyeIttifakOran')
   .then(response => {
       console.log(response)
       this.setState({posts : response.data})

@@ -22,7 +22,7 @@ class adayCollector extends Component {
 }
 
 componentDidMount() {
-  axios.get('https://localhost:7137/api/Oylar/GetTurkiyeAdayOyOran')
+  axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyeAdayOyOran')
   .then(response => {
       console.log(response)
       this.setState({posts : response.data})

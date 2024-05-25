@@ -25,7 +25,7 @@ import LinearProgress  from '@mui/material/LinearProgress'
 
     componentDidMount() {
 
-        axios.get('https://localhost:7137/api/Oylar/GetTurkiyePartiOran')
+        axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOran')
         .then(response => {
             this.setState({posts : response.data})
         })

@@ -35,10 +35,10 @@ function MapCollector() {
 
         setLoadingParti(true);
 
-        const partiResponse = await axios.get('https://localhost:7137/api/Oylar/GetTurkiyePartiOranEachIl');
+        const partiResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOranEachIl');
         setPartiData(partiResponse.data);
 
-        const wiinerPartiResponse = await axios.get('https://localhost:7137/api/Oylar/PartiWinOfTimesIl');
+        const wiinerPartiResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/PartiWinOfTimesIl');
         setPartiWinners(wiinerPartiResponse.data);
 
         
@@ -56,10 +56,10 @@ function MapCollector() {
 
         setLoadingAday(true);
 
-        const adayResponse = await axios.get('https://localhost:7137/api/Oylar/GetTurkiyeAdayOranEachIl');
+        const adayResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyeAdayOranEachIl');
         setAdayData(adayResponse.data);
 
-        const winnerAdayResponse = await axios.get('https://localhost:7137/api/Oylar/AdayWinTimesOfIl');
+        const winnerAdayResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/AdayWinTimesOfIl');
         setAdayWinners(winnerAdayResponse.data);
         
 

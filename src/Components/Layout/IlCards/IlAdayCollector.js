@@ -8,7 +8,7 @@ import IlAday from './IlAday.js';
  class IlAdayCollector extends Component {
   render() {
 
-    const iller = [12,34,45,56,67,78]
+    const iller = [34,6,35,16,7,1]
 
     return (
       <div className='mb-5'>
