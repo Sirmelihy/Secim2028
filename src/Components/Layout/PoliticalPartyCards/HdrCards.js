@@ -16,7 +16,7 @@ import { FaArrowRight } from "react-icons/fa";
     }
 
     componentDidMount() {
-        axios.get('https://localhost:7137/api/Oylar/GetTurkiyePartiOran')
+        axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOran')
         .then(response => {
             console.log(response)
             this.setState({posts : response.data})
