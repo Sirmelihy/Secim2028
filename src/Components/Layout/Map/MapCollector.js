@@ -83,14 +83,14 @@ function MapCollector() {
                     <Col xs={6} style={{ paddingRight:'0'}}>
                         <Button className='button-map-collector' onClick={() => { setPage("aday"); setAdayColor("danger"); setPartiColor("light")}} variant={adayColor}>
                             <Card.Img className='hide-on-small-screen map-image' src={Cumhur}></Card.Img>
-                            <h5  style={{marginTop:'10px'}}><span>2028 Cumhurbaşkanlığı Seçimi</span></h5>
+                            <span className='fw-bold presidency-text'>2028 Cumhurbaşkanlığı Seçimi</span>
                         </Button>
                         
                     </Col>
                     <Col xs={6} style={{paddingLeft:'0'}}>
                     <Button className='button-map-collector' onClick={() => { setPage("parti"); setAdayColor("light"); setPartiColor("primary")}} variant={partiColor}>
                         <Card.Img className='hide-on-small-screen map-image' src={TBMM}></Card.Img>
-                            <h5 style={{marginTop:'10px'}}>2028 Milletvekili Seçimi</h5>
+                        <span className='fw-bold presidency-text'>2028 Milletvekili Seçimi</span>
                         </Button>
                     </Col>
                 </Row>

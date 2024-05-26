@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import IlAday from './IlAday.js';
 
 
@@ -22,6 +23,18 @@ import IlAday from './IlAday.js';
           </Col>
           )}
         </Row>
+
+        <div className='d-flex justify-content-center'>
+            <Col xs ={4} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
+              <a href='/#'>
+              <Button className='rounded-pill w-100' variant='danger'>
+                Tümünü Gör
+              </Button>
+              </a>
+            </Col>
+        </div>
+
+
       </div>
       
     )
