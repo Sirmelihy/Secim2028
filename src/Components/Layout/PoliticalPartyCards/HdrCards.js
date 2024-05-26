@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import HDRCard from './hdrCard';
 import axios from 'axios'
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIosNew } from "react-icons/md";
+
 
 
  class hdrCards extends Component {
@@ -46,7 +47,7 @@ import { FaArrowRight } from "react-icons/fa";
     return (
         <div className='slc-container' >
             <button id='prev-slider' className='slider' onClick={scrollLeft}>
-              <FaArrowLeft />
+            <MdArrowBackIosNew />
             </button>
               <div className='mediaScroller'>
               {posts.map((posts) => 
@@ -60,7 +61,7 @@ import { FaArrowRight } from "react-icons/fa";
               )}
               </div>
             <button id='next-slider' className='slider' onClick={scrollRight}>
-              <FaArrowRight />
+            <MdArrowForwardIos />
             </button>
         </div>
     )

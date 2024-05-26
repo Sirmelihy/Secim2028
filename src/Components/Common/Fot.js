@@ -21,7 +21,7 @@ class Fot extends Component {
             </Col>
         </Row>
         <div className='container d-flex align-items-center justify-content-between' style={{height:'100%'}}>
-          <div style={{ maxWidth: '20%', wordWrap: 'normal' }}>
+          <div style={{ maxWidth: '50%', wordWrap: 'normal' }}>
             <span className='text-light fw-bold'>Bu Projedeki hiçbir veri gerçeği yansıtmamaktadır.</span>
           </div>
 
@@ -29,12 +29,13 @@ class Fot extends Component {
         </div>
         <hr className='text-light'/>
         <div className='container d-flex justify-content-between'>
+          <div style={{maxWidth:'70%'}}>
             <p className='text-secondary'>Copyright © 2024 - Melih Furkan OKUTAN</p>
-            <div className='mx-3'>
+          </div>
+          <div>
             <a href='https://github.com/Sirmelihy/Secim2028' target="_blank" rel="noreferrer"><FaGithub style={{fontSize:'30px'}} /></a>
             <a href='https://www.linkedin.com/in/melihokutan5/' target="_blank" rel="noreferrer"><FaLinkedin className='ms-3' style={{fontSize:'30px'}} /> </a>
-
-            </div>
+          </div>
             
         </div>
         

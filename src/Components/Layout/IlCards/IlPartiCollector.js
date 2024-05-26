@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import IlParti from './IlParti.js';
 
 export default class IlPartiCollector extends Component {
@@ -19,6 +20,15 @@ export default class IlPartiCollector extends Component {
         </Col>
             )}
         </Row>
+        <div className='d-flex justify-content-center'>
+            <Col xs ={4} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
+              <a href='/#'>
+              <Button className='rounded-pill w-100' variant='primary'>
+                Tümünü Gör
+              </Button>
+              </a>
+            </Col>
+        </div>
       </div>
     )
   }

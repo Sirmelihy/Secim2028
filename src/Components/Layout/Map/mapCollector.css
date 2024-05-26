@@ -9,6 +9,16 @@
     }
   }
 
+  .presidency-text {
+    font-size: 20px !important;
+  }
+
+@media (max-width:768px) {
+  .presidency-text {
+    font-size: 10px !important;
+  }
+}
+
 
   .button-map-collector {
     display:flex;
