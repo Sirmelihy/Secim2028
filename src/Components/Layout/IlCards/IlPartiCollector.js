@@ -21,7 +21,7 @@ export default class IlPartiCollector extends Component {
             )}
         </Row>
         <div className='d-flex justify-content-center'>
-            <Col xs ={4} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
+            <Col xs ={6} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
               <a href='/#'>
               <Button className='rounded-pill w-100' variant='primary'>
                 Tümünü Gör
