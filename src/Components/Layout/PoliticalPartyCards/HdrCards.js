@@ -17,7 +17,8 @@ import { MdArrowBackIosNew } from "react-icons/md";
     }
 
     componentDidMount() {
-        axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOran')
+      const apiBaseUrl = process.env.REACT_APP_API_URI;
+      axios.get(`${apiBaseUrl}/api/Oylar/GetTurkiyePartiOran`)
         .then(response => {
             console.log(response)
             this.setState({posts : response.data})
