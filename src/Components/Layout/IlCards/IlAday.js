@@ -29,14 +29,6 @@ class IlAday extends Component {
         const {ilNumber} = this.props;
         const apiBaseUrl = process.env.REACT_APP_API_URI;
 
-        axios.get(`${apiBaseUrl}/api/SecimIl/`+ilNumber)
-        .then(response => {
-            this.setState({il : response.data})
-        })
-        .catch(error => {
-            console.log(error)
-        })
-
         axios.get(`${apiBaseUrl}/api/Oylar/GetIlAdayOyOran?ilid=`+ilNumber)
         .then(response => {
             let toplam = 0;
@@ -46,6 +38,7 @@ class IlAday extends Component {
             console.log(response)
             this.setState({toplamOy : toplam})
             this.setState({posts : response.data})
+            console.log(response.data)
         })
         .catch(error => {
             console.log(error)
@@ -59,7 +52,7 @@ class IlAday extends Component {
         return words[words.length - 1];
       }
 
-    const {posts,il,toplamOy} = this.state;
+    const {posts,toplamOy} = this.state;
 
     return (
         
@@ -68,8 +61,11 @@ class IlAday extends Component {
                 <Card.Body>
                     <div className='iladay-manual-header mb-3'>
                         <div className='d-flex flex-column'>
-                            <span className='fw-bold' style={{fontSize:'20px'}}>{il.ilAdi}</span>
+                            <span className='fw-bold' style={{fontSize:'20px'}}>{posts.length > 0 ? posts[0].ilAdi : 'No Data'}</span>
                             <span className='text-secondary'>{toplamOy + ' Kullanılan Oy'}</span>
+                        </div>
+                        <div className='d-flex flex-column mx-2'>
+                            <span className='fw-bold' style={{fontSize:'20px'}}>{posts.length > 0 ? ((posts[0].ilID < 10) ? '0' + posts[0].ilID : posts[0].ilID) : 'No Data'}</span>
                         </div>
                     </div>
                     <TableContainer component={Paper}>
