@@ -11,35 +11,40 @@
 }
 
 .header-image {
-    width:10% ;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-link {
+    width: 10%;
 }
 
 @media (max-width:767px) {
-    .header-image {
+    .image-link {
         width: 25%;
     }
 }
 
 @media (min-width:767px) {
-    .header-image {
+    .image-link {
         width: 20%;
     }
 }
 
 @media (min-width:992px) {
-    .header-image {
+    .image-link {
         width: 15%;
     }
 }
 
 @media (min-width:1200px) {
-    .header-image {
+    .image-link {
         width: 10%;
     }
 }
 
 @media (min-width:1400px) {
-    .header-image {
+    .image-link {
         width: 8%;
     }
 }
