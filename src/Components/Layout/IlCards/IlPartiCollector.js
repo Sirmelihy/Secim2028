@@ -22,7 +22,7 @@ export default class IlPartiCollector extends Component {
         </Row>
         <div className='d-flex justify-content-center'>
             <Col xs ={6} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
-              <a href='/#'>
+              <a href='/il-il-sonuclar-parti'>
               <Button className='rounded-pill w-100' variant='primary'>
                 Tümünü Gör
               </Button>

@@ -18,7 +18,7 @@ function MapCollector() {
     const words = str.split(' ');
     return words[words.length - 1];
   }
-  const apiBaseUrl = process.env.REACT_APP_API_URI;
+  
   const [adayData, setAdayData] = useState([]);
   const [adayWinners,setAdayWinners] = useState([]);
   const [partiData, setPartiData] = useState([]);
@@ -30,6 +30,7 @@ function MapCollector() {
   const[partiColor,setPartiColor] = useState('light')
 
   useEffect(() => {
+    const apiBaseUrl = process.env.REACT_APP_API_URI;
     const fetchDataParti = async () => {
       try {
 

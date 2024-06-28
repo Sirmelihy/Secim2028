@@ -8,7 +8,9 @@ export default class Header extends Component {
     return (
       <div className='w-100' style={{ backgroundColor: '#f54033' }}>
         <div className='container header-main'>
-            <img className='header-image' src={Logo}alt='test' />
+          <a href='/' className='image-link'>
+            <img className='header-image' src={Logo}alt='test'/>
+          </a>
             <div className='right-header-content'>
                 <h1 className='text-light fw-bold'>SEÇİM 2028</h1>
                 <div className='ms-auto'>
