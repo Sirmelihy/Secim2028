@@ -18,7 +18,7 @@ function MapCollector() {
     const words = str.split(' ');
     return words[words.length - 1];
   }
-
+  
   const [adayData, setAdayData] = useState([]);
   const [adayWinners,setAdayWinners] = useState([]);
   const [partiData, setPartiData] = useState([]);
@@ -30,16 +30,17 @@ function MapCollector() {
   const[partiColor,setPartiColor] = useState('light')
 
   useEffect(() => {
+    const apiBaseUrl = process.env.REACT_APP_API_URI;
     const fetchDataParti = async () => {
       try {
 
         setLoadingParti(true);
-
-        const partiResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOranEachIl');
+        
+        const partiResponse = await axios.get(`${apiBaseUrl}/api/Oylar/GetTurkiyePartiOranEachIl`);
         setPartiData(partiResponse.data);
 
-        const wiinerPartiResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/PartiWinOfTimesIl');
-        setPartiWinners(wiinerPartiResponse.data);
+        const winnerPartiResponse = await axios.get(`${apiBaseUrl}/api/Oylar/PartiWinOfTimesIl`);
+        setPartiWinners(winnerPartiResponse.data);
 
         
 
@@ -56,10 +57,10 @@ function MapCollector() {
 
         setLoadingAday(true);
 
-        const adayResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyeAdayOranEachIl');
+        const adayResponse = await axios.get(`${apiBaseUrl}/api/Oylar/GetTurkiyeAdayOranEachIl`);
         setAdayData(adayResponse.data);
 
-        const winnerAdayResponse = await axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/AdayWinTimesOfIl');
+        const winnerAdayResponse = await axios.get(`${apiBaseUrl}/api/Oylar/AdayWinTimesOfIl`);
         setAdayWinners(winnerAdayResponse.data);
         
 

@@ -26,7 +26,7 @@ import IlAday from './IlAday.js';
 
         <div className='d-flex justify-content-center'>
             <Col xs ={6} sm={4} md={3} lg={2} xl={2} xxl={2} style={{padding:'15px'}}>
-              <a href='/#'>
+              <a href='/il-il-sonuclar-aday'>
               <Button className='rounded-pill w-100' variant='danger'>
                 Tümünü Gör
               </Button>

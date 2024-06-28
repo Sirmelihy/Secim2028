@@ -19,7 +19,8 @@ export default class allianceCollector extends Component {
 }
 
 componentDidMount() {
-  axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyeIttifakOran')
+  const apiBaseUrl = process.env.REACT_APP_API_URI;
+  axios.get(`${apiBaseUrl}/api/Oylar/GetTurkiyeIttifakOran`)
   .then(response => {
       console.log(response)
       this.setState({posts : response.data})

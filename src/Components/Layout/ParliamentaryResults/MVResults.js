@@ -24,10 +24,10 @@ import LinearProgress  from '@mui/material/LinearProgress'
     }
 
     componentDidMount() {
-
-        axios.get('https://secim202820240512205232.azurewebsites.net/api/Oylar/GetTurkiyePartiOran')
+      const apiBaseUrl = process.env.REACT_APP_API_URI;
+      axios.get(`${apiBaseUrl}/api/Oylar/GetTurkiyePartiOran`)
         .then(response => {
-            this.setState({posts : response.data})
+          this.setState({posts : response.data})
         })
         .catch(error => {
             console.log(error)
